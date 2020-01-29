@@ -12,7 +12,10 @@
 body {
     text-align: center;
     background-color: var(--bg-color);
-    font-family: 'Roboto', sans-serif;}
+    color: var(--txt-color);
+    font-family: 'Roboto', sans-serif;
+
+}
 .sm {
     filter: grayscale(90%);
     transition: .5s;
