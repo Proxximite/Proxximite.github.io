@@ -1,0 +1,15 @@
+:root{
+    --txt-color: black;
+    --bg-color: white;
+}
+
+.mainText {
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--txt-color);
+  color: rgba(0, 0, 0, 0);
+  font-family: 'Bebas Neue', cursive;
+}
+body {
+    text-align: center;
+    background-color: var(--bg-color);
+}
