@@ -9,14 +9,24 @@
 </head>
 
 <script>
-
+    var prox=0;
     function finish(){
-        setTimeout(function(){document.getElementById("load-pan").style.display = "none"}, 3000);
+ 
+        setTimeout(function(){document.getElementById("load-pan").style.backgroundColor = "rgba(0, 0, 0, 0"}, 3000);
+        setTimeout(function(){document.getElementById("load-pan").style.display = "none"}, 3500);
+
+    }
+    function proxximite(){
+        prox++;
+        if(prox>3)
+        {
+            document.getElementById("info").style.display = "block";
+        }
     }
 </script>
 <body onload="finish()">
 
-    <header>
+    <header onclick="proxximite()">
         <h1>RivoEvix</h1>
     </header>
 
@@ -27,11 +37,11 @@
             </a>
         </div>
     </div>
-    <div class="info">yeah bruh proxximite was here</div>
+    <div class="info" id="info">yeah bruh proxximite was here</div>
     <div class="load-pan" id="load-pan">
         <div class="lds-ripple"><div></div><div></div></div>
        
-    </div>
+    </div> 
 
 </body>
 
