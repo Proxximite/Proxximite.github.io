@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+
+<script>
+
+    function finish(){
+        setTimeout(function(){document.getElementById("load-pan").style.display = "none"}, 3000);
+    }
+</script>
+<body onload="finish()">
+
+    <header>
+        <h1>RivoEvix</h1>
+    </header>
+
+    <div class="social-wrapper">
+        <div class="yt">
+            <a href="https://www.youtube.com/channel/UCCqqzA8MUF5QhQHy37cCZOQ">
+                <img src="images/yt_logo_rgb_light.png" class="yt-img" height="50px">
+            </a>
+        </div>
+    </div>
+    <div class="info">yeah bruh proxximite was here</div>
+    <div class="load-pan" id="load-pan">
+        <div class="lds-ripple"><div></div><div></div></div>
+       
+    </div>
+
+</body>
+
+</html>
