@@ -9,7 +9,7 @@ body {
 header {
     margin-bottom: 50px;
     background-color: rgb(78,3,3);
-    height: 10vh;
+    
   border-block-end: solid 3px white;
 }
 
@@ -23,14 +23,17 @@ header {
     line-height: 5vh;
     display: none;
 }
-.yt{
+.social-ic {
   transition: .5s;
-  width: 223.033707865px;
-  margin: auto;
+  
   padding: 10px;
   border-radius: 5px;
 }
-.yt:hover {
+.yt {
+  width: 223.033707865px;
+  margin: auto;
+}
+.social-ic:hover {
   background-color: white;
 }
 .yt-img {
@@ -41,6 +44,15 @@ header {
 }
 .yt-img:hover {
     filter: grayscale(0%) invert(0%);
+}
+.dc-img {
+  filter: invert(100%);
+  transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+}
+.dc-img:hover{
+  filter: invert(0%);
 }
 .load-pan {
     position: fixed;
