@@ -45,12 +45,13 @@ header {
     display: inline-block;
     *display: inline; /* For IE7 */
     zoom: 1; /* Trigger hasLayout */
-    width: 33%;
+    width: 32%;
     text-align: center;
 }
 .ml {
     transition: .4s background-color;
     cursor: pointer;
+
 }
 .ml:hover {
     background-color: #23272A;
