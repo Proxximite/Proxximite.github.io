@@ -11,6 +11,7 @@ header {
     width: 100%;
     position: fixed;
     text-align: center;
+    transition: 1s;
 }
 .block-main {
     height: 90px;
@@ -18,11 +19,13 @@ header {
 }
 .main{
     padding: 10px;
+    height: 100vh;
 }
 
 .welcome {
     position: absolute;
     animation: slide 1s;
+    z-index: -1;
 }
 
 @keyframes slide{
@@ -39,6 +42,8 @@ header {
     color: white;
     position: fixed;
     top: 80px;
+    transition: 1s;
+
 }
 
 .container > .ml {
@@ -55,4 +60,12 @@ header {
 }
 .ml:hover {
     background-color: #23272A;
+}
+.main-tx {
+    padding-top: 50px;
+}
+#head-t {
+    font-size: 24pt;
+    transition: 1s;
+
 }
