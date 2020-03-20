@@ -1,0 +1,57 @@
+body {
+    background-color: #2C2F33;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    height: 80px;
+    background-color: #23272A;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+}
+.block-main {
+    height: 90px;
+    width: 100%;
+}
+.main{
+    padding: 10px;
+}
+
+.welcome {
+    position: absolute;
+    animation: slide 1s;
+}
+
+@keyframes slide{
+    0%{left: -140px}
+    100%{left: 10px;}
+}
+
+.header-nav {
+    border-top: solid 1px white;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(29, 32, 34);
+    line-height: 30px;
+    color: white;
+    position: fixed;
+    top: 80px;
+}
+
+.container > .ml {
+    display: inline-block;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
+}
+.ml {
+    transition: .4s background-color;
+    cursor: pointer;
+}
+.ml:hover {
+    background-color: #23272A;
+}
