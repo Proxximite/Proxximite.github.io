@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap" rel="stylesheet">
+</head>
+
+
+<script>
+
+    function generateUser() {
+        var nickElement = document.getElementById("nick");
+        var pfpElement = document.getElementById("pfp");
+        nickElement.innerHTML = "bruh";
+    }
+</script>
+
+<body>
+    <script>
+
+        function generateUser() {
+            var nickElement = document.getElementById("nick");
+            var pfpElement = document.getElementById("pfp");  
+            var firstName = ['Jonathan', "Joseph", "Jotaro", "Josuke", "Giorno", "Jolyne", "Johnny"];
+            var lastName = ['', '', 'Joestar', 'Joestar', 'Kujo', 'Higashikata', 'Giovanna', 'Cujoh', "Joestar"];
+            var img = ['https://vignette.wikia.nocookie.net/jjba/images/2/23/JonathanAv.png/revision/latest/scale-to-width-down/120?cb=20160414202520', 'https://vignette.wikia.nocookie.net/jjba/images/1/13/JosephAv.png/revision/latest/scale-to-width-down/120?cb=20190215001849', 'https://vignette.wikia.nocookie.net/jjba/images/a/a5/JotaroAv.png/revision/latest?cb=20170203051344', 'https://vignette.wikia.nocookie.net/jjba/images/f/fc/JosukeAv.png/revision/latest/scale-to-width-down/120?cb=20160607061915', 'https://vignette.wikia.nocookie.net/jjba/images/b/b5/GiornoAv.png/revision/latest/scale-to-width-down/120?cb=20181103125607', 'https://vignette.wikia.nocookie.net/jjba/images/3/3a/JolyneAv.png/revision/latest/scale-to-width-down/120?cb=20190323180552', 'https://vignette.wikia.nocookie.net/jjba/images/7/74/JohnnyAv.png/revision/latest/scale-to-width-down/120?cb=20170218074643', 'https://vignette.wikia.nocookie.net/jjba/images/a/aa/Josuke8Av.png/revision/latest/scale-to-width-down/120?cb=20180730001857'];
+            nickElement.innerHTML = firstName[Math.floor(Math.random() * firstName.length)] + " " + lastName[Math.floor(Math.random() * lastName.length)];
+            pfpElement.src = img[Math.floor(Math.random() * img.length)];
+        }
+    </script>
+    <header>
+        <img src="Discord-Wordmark-White.png" height="50px" class="discordLogoHeading"> <span
+            class="textHeading">Nickname Generator</span>
+    </header>
+
+    <br>
+
+    <article class="main">
+        <h3>Generate a weeb discord account.</h3>
+
+        <input type="button" class="generate" value="Generate" onclick="generateUser()"> <br>
+        <br>
+        <img class="pfp" id="pfp" src="322c936a8c8be1b803cd94861bdfa868.png">
+
+    </img>
+
+        <div class="info">
+            Username: <span id="nick">Joseph Obama</span>
+        </div>
+    </article>
+
+
+</body>
+
+</HTML>

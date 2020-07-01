@@ -69,3 +69,20 @@ header {
     transition: 1s;
 
 }
+.slider {
+    width: 391.111111111px;
+    height: 220px;
+    margin: auto;
+    border: solid 1px rgb(29, 32, 34);
+
+}
+.botList{
+    min-height: 110px;
+    
+}
+.botHL {
+    width: 110px;
+    height: 110px;
+    border-radius: 7px;
+    background-image: url("mee");
+}

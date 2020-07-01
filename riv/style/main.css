@@ -45,14 +45,17 @@ header {
 .yt-img:hover {
     filter: grayscale(0%) invert(0%);
 }
-.dc-img {
-  filter: invert(100%);
-  transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
+.dc {
+  background-color: #2C2F33;
+  padding: 10px;
+  border-radius: 7px;
+  width: 600px;
+  margin: auto;
+  transition: border-radius .5s,  box-shadow .4s;
 }
-.dc-img:hover{
-  filter: invert(0%);
+.dc:hover {
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 2px rgb(34, 36, 39);
 }
 .load-pan {
     position: fixed;
@@ -101,4 +104,7 @@ header {
       opacity: 0;
     }
   }
-  
+.dc-soc {
+  color: white;
+  text-decoration: none;
+}
